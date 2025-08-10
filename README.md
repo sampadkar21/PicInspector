@@ -50,6 +50,11 @@ To run the notebooks, install the required dependencies:
 pip install torch transformers accelerate bitsandbytes evaluate rouge_score pandas matplotlib seaborn scikit-learn
 ```
 
+## Notebook Descriptions
+- PicInspector-part1-caption_generation.ipynb: Training and evaluation of the caption generation model. Includes data loading, fine-tuning with LoRA, ROUGE metric evaluation, and model saving.
+- PicInspector-part2-scores_generation.ipynb: Multi-task training for quality score regression and scene classification using DINOv2 backbone. Covers preprocessing, training, and validation.
+- inferencing.ipynb: End-to-end inference pipeline demonstrating how to generate captions, predict scores, and visualize results (e.g., radar charts for quality attributes).
+
 ### Example Inference Workflow
 - Load an image (from URL or file).
 - Run the caption generation model to get a quality description.
