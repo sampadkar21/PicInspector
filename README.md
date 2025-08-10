@@ -29,7 +29,7 @@ The project leverages datasets like SPAQ-10K for training and evaluation, includ
 - Processes images with a vision encoder and fuses features into a language model decoder for text generation.  
 
 **Architecture:**  
-Image input → Vision Transformer Encoder → Text embeddings + image features → Language Model Decoder → Detailed captions describing image quality  
+![img](images/architecture_smolvlm.png)
 
 ### 2. Score and Scene Prediction Model (Multi-Head DINOv2)
 
@@ -38,9 +38,7 @@ Image input → Vision Transformer Encoder → Text embeddings + image features 
   - Classification of scene categories (9 classes)  
 
 **Architecture:**  
-Image input → DINOv2 Encoder (feature pooling) →  
-&nbsp;&nbsp;&nbsp;&nbsp;→ Regression Head (linear layers) for scores  
-&nbsp;&nbsp;&nbsp;&nbsp;→ Classification Head (linear layers + softmax) for scenes  
+![img](images/graphviz.png)
 
 ---
 
