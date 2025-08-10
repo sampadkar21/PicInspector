@@ -12,8 +12,8 @@ A multi-modal system that automatically evaluates images through:
 
 PicInspector is a comprehensive tool for evaluating image quality through AI-driven caption generation and quantitative scoring. This repository contains Jupyter notebooks demonstrating training and inference pipelines for two key components:
 
-- **Caption Generation:** Uses a fine-tuned vision-language model (based on SmolLM) to generate detailed textual descriptions of image quality aspects like sharpness, noise, and overall aesthetics.  
-- **Score Generation:** Employs a multi-task model built on DINOv2 to predict numerical scores for quality attributes (e.g., MOS, brightness) and classify scene categories (e.g., landscape, indoor).  
+- **Caption Generation:** Uses a fine-tuned vision-language model (based on SmolVLM) to generate detailed textual descriptions of image quality aspects like sharpness, noise, and overall aesthetics.  
+- **Score Generation:** Employs a multi-task model built on DINOv2 to predict numerical scores for quality attributes (e.g., Image Score, brightness) and classify scene categories (e.g., landscape, indoor).  
 
 The project leverages datasets like QGround-100K and SPAQ-10K for training and evaluation, including MOS scores, attribute labels, and scene categories. Evaluation includes metrics like ROUGE for captions and loss functions for regression/classification tasks.
 
@@ -53,7 +53,7 @@ pip install torch transformers accelerate bitsandbytes evaluate rouge_score pand
 ## Notebook Descriptions
 - PicInspector-part1-caption_generation.ipynb: Training and evaluation of the caption generation model. Includes data loading, fine-tuning with LoRA, ROUGE metric evaluation, and model saving.
 - PicInspector-part2-scores_generation.ipynb: Multi-task training for quality score regression and scene classification using DINOv2 backbone. Covers preprocessing, training, and validation.
-- inferencing.ipynb: End-to-end inference pipeline demonstrating how to generate captions, predict scores, and visualize results (e.g., radar charts for quality attributes).
+- inferencing.ipynb: End-to-end inference pipeline demonstrating how to generate captions, predict scores, and visualize results.
 
 ### Example Inference Workflow
 - Load an image (from URL or file).
