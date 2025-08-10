@@ -56,9 +56,9 @@ pip install torch transformers accelerate bitsandbytes evaluate rouge_score pand
 - Run the score prediction model to get numerical quality attributes and scene classification.
 
 Example output:
-![img](images/out1)
+![img](images/out1.jpg)
 
-![img](images/out2)
+![img](images/out2.jpg)
 
 ## Citation
 
