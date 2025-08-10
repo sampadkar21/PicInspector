@@ -5,7 +5,7 @@ A multi-modal system that automatically evaluates images through:
 - ✔ Scene understanding (Landscape, Portrait, Night, etc.) 
 - ✔ Natural language feedback ("This image has motion blur...")
 
-Overview
+Overview:\n
 PicInspector is a comprehensive tool for evaluating image quality through AI-driven caption generation and quantitative scoring. This repository contains Jupyter notebooks that demonstrate the training and inference pipelines for two key components: generating detailed quality descriptions using a fine-tuned language-vision model and predicting quality scores (e.g., brightness, sharpness) along with scene classification using a multi-task DINOv2-based model. Visualizations of model architectures are included to illustrate the underlying structures.
 Table of Contents
 
